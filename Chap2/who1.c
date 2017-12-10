@@ -9,7 +9,7 @@ int main(int argc, char const *argv[]) {
   /* code */
   struct utmp current_record;
   int utmpfd;
-  int reclen = sizeof(current_record)
+  int reclen = sizeof(current_record);
 
   //打开UTMP_FILE, 有错误就输出；UTMP_FILE在utmp.h中定义；
   if ( (utmpfd = open(UTMP_FILE, O_RDONLY)) == -1) {
